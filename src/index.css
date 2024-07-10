@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply font-base;
+
+  /* --light-bg-color: #fff;
+  --light-text-color: #222;
+  --dark-bg-color: #222;
+  --dark-text-color: #fff; */
+
+  @media (prefers-color-scheme: dark) {
+  }
+
+  @media (prefers-color-scheme: light) {
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-base;
+  scroll-behavior: smooth;
+}
+
+/* .root {
+  min-height: 100vh;
+} */
+
+.font-base {
+  font-family: 'Sen', sans-serif;
+  /* font-weight: 400; */
+}
+
+.dark {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.light {
+  transition: background-color 1s ease, color 1s ease;
+}
